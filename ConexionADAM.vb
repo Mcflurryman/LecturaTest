@@ -22,8 +22,11 @@ Public Class ConexionADAM 'comunicarse con el módulo ADAM-4019 y recuperar las 
 
             puerto.Open() 'Abrimos puerto'
 
+            puerto.DiscardInBuffer()
+            puerto.DiscardOutBuffer()
             ' Solicitar lectura de todos los canales
             puerto.Write("#" & direccion & vbCr)
+
 
             ' Recibir respuesta del módulo
             Dim Respuesta As String = puerto.ReadTo(vbCr)

@@ -24,21 +24,24 @@ Partial Class Form1
     Private Sub InitializeComponent()
         btnLeer = New Button()
         txtS1 = New TextBox()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox3 = New TextBox()
-        TextBox4 = New TextBox()
-        TextBox5 = New TextBox()
-        TextBox6 = New TextBox()
+        txtS2 = New TextBox()
+        txtS3 = New TextBox()
+        txtS4 = New TextBox()
+        txtS5 = New TextBox()
+        txtS6 = New TextBox()
+        txtS7 = New TextBox()
         lblS1 = New Label()
         lblS2 = New Label()
         lblS3 = New Label()
         lblS4 = New Label()
         lblS5 = New Label()
         lblS6 = New Label()
-        lblS7 = New Label()
         btnSaveDB = New Button()
         lblentera = New TextBox()
+        Label1 = New Label()
+        txtS8 = New TextBox()
+        lblS7 = New Label()
+        Label2 = New Label()
         SuspendLayout()
         ' 
         ' btnLeer
@@ -58,53 +61,53 @@ Partial Class Form1
         txtS1.Size = New Size(89, 36)
         txtS1.TabIndex = 1
         ' 
-        ' TextBox1
+        ' txtS2
         ' 
-        TextBox1.Location = New Point(275, 95)
-        TextBox1.Multiline = True
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(89, 36)
-        TextBox1.TabIndex = 2
+        txtS2.Location = New Point(275, 95)
+        txtS2.Multiline = True
+        txtS2.Name = "txtS2"
+        txtS2.Size = New Size(89, 36)
+        txtS2.TabIndex = 2
         ' 
-        ' TextBox2
+        ' txtS3
         ' 
-        TextBox2.Location = New Point(275, 159)
-        TextBox2.Multiline = True
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(89, 36)
-        TextBox2.TabIndex = 3
+        txtS3.Location = New Point(275, 159)
+        txtS3.Multiline = True
+        txtS3.Name = "txtS3"
+        txtS3.Size = New Size(89, 36)
+        txtS3.TabIndex = 3
         ' 
-        ' TextBox3
+        ' txtS4
         ' 
-        TextBox3.Location = New Point(275, 223)
-        TextBox3.Multiline = True
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(89, 36)
-        TextBox3.TabIndex = 4
+        txtS4.Location = New Point(275, 223)
+        txtS4.Multiline = True
+        txtS4.Name = "txtS4"
+        txtS4.Size = New Size(89, 36)
+        txtS4.TabIndex = 4
         ' 
-        ' TextBox4
+        ' txtS5
         ' 
-        TextBox4.Location = New Point(457, 28)
-        TextBox4.Multiline = True
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(89, 36)
-        TextBox4.TabIndex = 5
+        txtS5.Location = New Point(457, 28)
+        txtS5.Multiline = True
+        txtS5.Name = "txtS5"
+        txtS5.Size = New Size(89, 36)
+        txtS5.TabIndex = 5
         ' 
-        ' TextBox5
+        ' txtS6
         ' 
-        TextBox5.Location = New Point(457, 95)
-        TextBox5.Multiline = True
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(89, 36)
-        TextBox5.TabIndex = 6
+        txtS6.Location = New Point(457, 95)
+        txtS6.Multiline = True
+        txtS6.Name = "txtS6"
+        txtS6.Size = New Size(89, 36)
+        txtS6.TabIndex = 6
         ' 
-        ' TextBox6
+        ' txtS7
         ' 
-        TextBox6.Location = New Point(457, 159)
-        TextBox6.Multiline = True
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(89, 36)
-        TextBox6.TabIndex = 7
+        txtS7.Location = New Point(457, 159)
+        txtS7.Multiline = True
+        txtS7.Name = "txtS7"
+        txtS7.Size = New Size(89, 36)
+        txtS7.TabIndex = 7
         ' 
         ' lblS1
         ' 
@@ -160,15 +163,6 @@ Partial Class Form1
         lblS6.TabIndex = 13
         lblS6.Text = "S6"
         ' 
-        ' lblS7
-        ' 
-        lblS7.AutoSize = True
-        lblS7.Location = New Point(494, 141)
-        lblS7.Name = "lblS7"
-        lblS7.Size = New Size(19, 15)
-        lblS7.TabIndex = 14
-        lblS7.Text = "S7"
-        ' 
         ' btnSaveDB
         ' 
         btnSaveDB.Location = New Point(435, 317)
@@ -180,16 +174,54 @@ Partial Class Form1
         ' 
         ' lblentera
         ' 
-        lblentera.Location = New Point(507, 253)
+        lblentera.Location = New Point(34, 31)
         lblentera.Name = "lblentera"
-        lblentera.Size = New Size(264, 23)
+        lblentera.Size = New Size(207, 23)
         lblentera.TabIndex = 16
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(95, 9)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(96, 15)
+        Label1.TabIndex = 17
+        Label1.Text = "Respuesta Entera"
+        ' 
+        ' txtS8
+        ' 
+        txtS8.Location = New Point(457, 223)
+        txtS8.Multiline = True
+        txtS8.Name = "txtS8"
+        txtS8.Size = New Size(89, 36)
+        txtS8.TabIndex = 18
+        ' 
+        ' lblS7
+        ' 
+        lblS7.AutoSize = True
+        lblS7.Location = New Point(494, 141)
+        lblS7.Name = "lblS7"
+        lblS7.Size = New Size(19, 15)
+        lblS7.TabIndex = 14
+        lblS7.Text = "S7"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(494, 205)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(19, 15)
+        Label2.TabIndex = 19
+        Label2.Text = "S8"
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Label2)
+        Controls.Add(txtS8)
+        Controls.Add(Label1)
         Controls.Add(lblentera)
         Controls.Add(btnSaveDB)
         Controls.Add(lblS7)
@@ -199,12 +231,12 @@ Partial Class Form1
         Controls.Add(lblS3)
         Controls.Add(lblS2)
         Controls.Add(lblS1)
-        Controls.Add(TextBox6)
-        Controls.Add(TextBox5)
-        Controls.Add(TextBox4)
-        Controls.Add(TextBox3)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        Controls.Add(txtS7)
+        Controls.Add(txtS6)
+        Controls.Add(txtS5)
+        Controls.Add(txtS4)
+        Controls.Add(txtS3)
+        Controls.Add(txtS2)
         Controls.Add(txtS1)
         Controls.Add(btnLeer)
         Name = "Form1"
@@ -215,20 +247,23 @@ Partial Class Form1
 
     Friend WithEvents btnLeer As Button
     Friend WithEvents txtS1 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents txtS2 As TextBox
+    Friend WithEvents txtS3 As TextBox
+    Friend WithEvents txtS4 As TextBox
+    Friend WithEvents txtS5 As TextBox
+    Friend WithEvents txtS6 As TextBox
+    Friend WithEvents txtS7 As TextBox
     Friend WithEvents lblS1 As Label
     Friend WithEvents lblS2 As Label
     Friend WithEvents lblS3 As Label
     Friend WithEvents lblS4 As Label
     Friend WithEvents lblS5 As Label
     Friend WithEvents lblS6 As Label
-    Friend WithEvents lblS7 As Label
     Friend WithEvents btnSaveDB As Button
     Friend WithEvents lblentera As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtS8 As TextBox
+    Friend WithEvents lblS7 As Label
+    Friend WithEvents Label2 As Label
 
 End Class
